@@ -1,0 +1,23 @@
+
+
+
+body{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: large;
+    border-radius: 10px;
+}
