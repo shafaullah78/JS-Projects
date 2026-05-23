@@ -1,0 +1,168 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.container {
+
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px black;
+
+}
+
+
+
+h1 {
+
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+
+
+#update {
+
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+
+}
+
+#delAll {
+
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: white;
+
+}
+
+
+#btn {
+
+    border: none;
+    padding: 5px 10px;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 4px;
+}
+
+#user {
+
+    padding: 4px;
+    border-radius: 4px;
+    width: 82%;
+
+}
+
+
+
+
+
+
+li {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: 5px 0;
+    font-size: 12px;
+    word-break: break-word;
+
+
+}
+
+.delItem {
+
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    height: fit-content;
+
+
+}
+
+.editItem {
+
+    background-color: blue;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 3px;
+
+
+}
+
+.li-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+/* ye input aor add buttons kly hai  */
+
+
+.container div {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* align-self: flex-start; */
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    li {
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
