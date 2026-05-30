@@ -1,6 +1,8 @@
 
 var getInput = document.querySelector('#user')
+
 var getBtn = document.querySelector('#btn')
+
 var getList = document.querySelector('#list')
 
 var getDelAll = document.querySelector('#delAll')
@@ -22,7 +24,9 @@ getDelAll.addEventListener('click', function () {
 
 
 function delItem(e) {
+
     e.parentNode.remove()
+
 }
 
 

@@ -3,7 +3,6 @@ var getInputPassword = document.querySelector('#password')
 
 var copyBtn = document.querySelector('#copyBtn')
 
-
 var upperCase = document.querySelector('#upper')
 
 var lowerCase = document.querySelector('#lower')
@@ -13,7 +12,6 @@ var numbers = document.querySelector('#numbers')
 var symbols = document.querySelector('#symbols')
 
 var generateBtn = document.querySelector('#generateBtn')
-
 
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -25,8 +23,7 @@ var symbolsChars = "!@#$%^&*()_+"
 
 
 generateBtn.addEventListener('click', function() {
-    
-    
+        
     var passwordLength = document.querySelector('#length').value
 
     var chars = ''
@@ -55,8 +52,6 @@ generateBtn.addEventListener('click', function() {
 
     }
 
-
-
     if(chars === '') {
 
         return alert('Please select at least one option')
@@ -76,7 +71,6 @@ generateBtn.addEventListener('click', function() {
 
     getInputPassword.value = password
 
-
 })
 
 
@@ -89,6 +83,5 @@ copyBtn.addEventListener('click', function() {
     getInputPassword.value = ''
 
     alert('password copied to clipbord')
-
 
 })

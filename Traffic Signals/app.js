@@ -1,14 +1,16 @@
 
-
-
 var getRed = document.getElementById('red')
+
 var getYellow = document.getElementById('yell')
+
 var getGreen = document.getElementById('gree')
 
 var getStatus = document.getElementById('status')
 
 var redBtn = document.getElementById('Rb')
+
 var yellowBtn = document.getElementById('Yb')
+
 var greenBtn = document.getElementById('Gb')
 
 
@@ -17,16 +19,24 @@ var greenBtn = document.getElementById('Gb')
 function allOFF() {
 
     getRed.style.background = 'white'
+
     getYellow.style.background = 'white'
+
     getGreen.style.background = 'white'
 
-    redBtn.style.background = 'gray'
-    yellowBtn.style.background = 'gray'
-    greenBtn.style.background = 'gray'
 
+    redBtn.style.background = 'gray'
     
     redBtn.style.color = 'black'
+
+
+    yellowBtn.style.background = 'gray'
+    
     yellowBtn.style.color = 'black'
+
+
+    greenBtn.style.background = 'gray'
+    
     greenBtn.style.color = 'black'
 
 }
@@ -37,14 +47,14 @@ function btnRed() {
     allOFF()
 
     getRed.style.background = 'red'
+
     getStatus.innerHTML = 'The red signal is ON'
 
     redBtn.style.background = 'red'
+
     redBtn.style.color = 'white'
 
-
 }
-
 
 
 function btnYellow() {
@@ -52,14 +62,15 @@ function btnYellow() {
     allOFF()
 
     getYellow.style.background = 'yellow'
+
     getStatus.innerHTML = 'The yellow signal is ON'
 
     yellowBtn.style.background = 'yellow'
+
     yellowBtn.style.color = 'white'
 
 
 }
-
 
 
 function btnGreen() {
@@ -67,11 +78,12 @@ function btnGreen() {
     allOFF()
 
     getGreen.style.background = 'green'
+
     getStatus.innerHTML = 'The green signal is ON'
 
     greenBtn.style.background = 'green'
-    greenBtn.style.color = 'white'
 
+    greenBtn.style.color = 'white'
 
 }
 

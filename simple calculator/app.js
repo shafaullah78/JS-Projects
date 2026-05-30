@@ -1,8 +1,8 @@
 
-
-
 var input1 = document.getElementById('number1')
+
 var input2 = document.getElementById('number2')
+
 
 function add() {
 
@@ -11,22 +11,24 @@ function add() {
     document.getElementById('res').value = addition
 
     document.getElementById('number1').value = ''
+
     document.getElementById('number2').value = ''
 
 }
 
 
 function sub() {
+
     var subtract = input1.value - input2.value
 
     document.getElementById('res').value = subtract
 
     document.getElementById('number1').value = ''
+
     document.getElementById('number2').value = ''
 
-
-
 }
+
 
 function mul() {
 
@@ -35,10 +37,11 @@ function mul() {
     document.getElementById('res').value = multiplication
 
     document.getElementById('number1').value = ''
+
     document.getElementById('number2').value = ''
 
-
 }
+
 
 function divid() {
 
@@ -47,7 +50,7 @@ function divid() {
     document.getElementById('res').value = (divide).toFixed(2)
 
     document.getElementById('number1').value = ''
-    document.getElementById('number2').value = ''
 
+    document.getElementById('number2').value = ''
 
 }

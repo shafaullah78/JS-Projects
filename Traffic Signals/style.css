@@ -1,29 +1,52 @@
+body {
 
- body {
-            text-align: center;
-            margin: 100px auto;
-            background-color: black;
-            color: white;
-        }
+    text-align: center;
 
-        .signals  div {
-            width: 70px;
-            height: 70px;
-            border: 1px solid black;
-            border-radius: 70px;
-            background-color: white;
-        }
+    margin: 100px auto;
 
-        .signals{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
+    background-color: black;
 
-        button{
-            width: 100px;
-            padding: 10px;
-            font-size: large;
-            margin: 10px;
-            border-radius: 7px;
-        }
+    color: white;
+
+}
+
+
+.signals div {
+
+    width: 70px;
+
+    height: 70px;
+
+    border: 1px solid black;
+
+    border-radius: 70px;
+
+    background-color: white;
+
+}
+
+
+.signals {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+}
+
+
+button {
+
+    width: 100px;
+
+    padding: 10px;
+
+    font-size: large;
+
+    margin: 10px;
+
+    border-radius: 7px;
+
+}

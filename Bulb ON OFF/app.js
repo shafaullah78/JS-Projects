@@ -23,7 +23,6 @@ function onOFF() {
 
         isOn = true;
 
-
     }
     else {
 
@@ -34,11 +33,10 @@ function onOFF() {
         button.innerText = 'ON'
 
         button.style.background = 'green'
+       
         button.style.color = 'white'
 
         isOn = false
-
-
 
     }
 }
