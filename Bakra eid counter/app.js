@@ -4,7 +4,7 @@ var getTimer = document.querySelector('#timer')
 function countDown() {
 
     var bakraEid = new Date('may 27, 2026')
-    
+
     var today = new Date()
 
     var diff = bakraEid - today
@@ -22,36 +22,37 @@ function countDown() {
 
     if (diff < 0) {
 
+        clearInterval(timer)
         getTimer.innerHTML = 'Bakra Eid Mobarak ho'
-
+        return
     }
 
 
     if (days < 10) {
-    
+
         days = '0' + days
-    
+
     }
 
 
     if (hours < 10) {
-    
+
         hours = '0' + hours
-    
+
     }
 
 
     if (minutes < 10) {
-    
+
         minutes = '0' + minutes
-    
+
     }
 
 
     if (seconds < 10) {
-    
+
         seconds = '0' + seconds
-    
+
     }
 
 
@@ -61,4 +62,4 @@ function countDown() {
 }
 
 
-setInterval(countDown, 1000)
+var timer = setInterval(countDown, 1000)
