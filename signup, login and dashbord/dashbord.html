@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main-div">
+
+
+        <!-- this is the side bar section  -->
+        <div class="side-bar">
+
+            <h2>Dashbord</h2>
+
+            <div>
+                <br>
+                <a href="#">Home</a>
+                <a href="#">Users</a>
+                <a href="#">Products</a>
+                <a href="#">Reports</a>
+                <a id="logout" href="#">Logout</a>
+
+            </div>
+
+        </div>
+
+        <!-- This is the right side section  -->
+
+        <div class="Right-section">
+
+            <h3>
+                Welcome
+            </h3>
+
+            <div class="card-container">
+
+                <div class="card-info">
+
+                    <h5>Total Users</h5>
+
+                    <h2>1250</h2>
+
+                </div>
+
+
+                <div class="card-info">
+
+                    <h5>Total Orders</h5>
+
+                    <h2>540</h2>
+
+                </div>
+
+
+                <div class="card-info">
+
+                    <h5>Total Revenue</h5>
+
+                    <h2>$ 1250</h2>
+
+                </div>
+
+            </div>
+            <br><br>
+
+            <div class="recent">Recent Users</div>
+
+            <table>
+
+                <thead>
+
+                    <th>Name</th>
+                    <th>Email</th>
+
+                </thead>
+
+
+                <tbody id="tbody">
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- sweet alert  -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="dash.js"></script>
+</body>
+
+</html>

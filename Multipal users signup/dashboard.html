@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">
+                Dashboard
+            </a>
+
+            <button class="btn btn-danger" onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <div class="card shadow">
+
+            <div class="card-header">
+                <h3 class="mb-0">
+                    Recent Users
+                </h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody">
+
+                            <!-- Users Here -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

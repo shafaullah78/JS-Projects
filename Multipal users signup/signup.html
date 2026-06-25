@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-lg-5 col-md-7">
+
+                <div class="card shadow">
+                    <div class="card-body p-4">
+
+                        <h2 class="text-center mb-4">Create Account</h2>
+
+                        <div id="signupForm">
+
+                            <div class="mb-3">
+                                <label>Name</label>
+                                <input type="text" id="s-name" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" id="s-email" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Password</label>
+                                <input type="password" id="s-password" class="form-control">
+                            </div>
+
+                            <button onclick="signup()" class="btn btn-primary w-100">
+                                Sign Up
+                            </button>
+
+                        </div>
+
+                        <p class="text-center mt-3">
+                            Already have an account?
+                            <a href="login.html">Login</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
