@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.container {
+
+    max-width: 1200px;
+}
+
+.card {
+
+    background-color: white;
+    padding: 25px;
+
+}
+
+h1 {
+
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+
+.form {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+
+}
+
+input {
+
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+
+button {
+    padding: 12px 20px;
+    font-size: large;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+
+
+#addBtn {
+
+    background-color: lime;
+
+}
+
+#searchBtn {
+
+    background-color: gainsboro;
+
+}
+
+#updateBtn {
+
+    background-color: rgb(48, 176, 219);
+
+}
+
+
+#deleteBtn {
+
+    background-color: rgb(210, 14, 14);
+
+}
+
+
+#addBtn:hover {
+
+    background-color: limegreen;
+
+}
+
+
+#searchBtn:hover {
+
+    background-color: gray;
+
+}
+
+
+#updateBtn:hover {
+
+    background-color: blue;
+
+}
+
+
+#deleteBtn:hover {
+
+    background-color: red;
+
+}
+
+#recoveryBtn {
+
+    background-color: violet;
+    color: black;
+
+}
+
+#recoveryBtn:hover {
+
+    background-color: rgb(212, 17, 212);
+
+}
+
+
+.table-card {
+
+    background-color: white;
+    margin-top: 30px;
+    padding: 15px;
+
+}
+
+
+h2 {
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+table {
+
+    width: 100%;
+   
+
+}
+
+
+th {
+
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: left;
+
+}
+
+
+td {
+
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    text-align: left;
+
+}
+
+
+@media (max-width: 576px) {
+
+
+    .container {
+        width: 100%;
+        max-width: auto;
+    }
+
+
+    .card {
+
+        background-color: white;
+        padding: 25px;
+
+    }
+
+
+    h1 {
+
+        text-align: left;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        font-size: 23px;
+
+    }
+
+
+    .buttons {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: large;
+        color: white;
+        border-radius: 7px;
+        border: none;
+    }
+
+    input {
+
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+
+
+.table-card {
+
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+
+
+
+}
