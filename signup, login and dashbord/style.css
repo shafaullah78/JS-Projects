@@ -201,19 +201,18 @@ table {
 
 }
 
-table th {
+table thead th {
     padding: 10px 0;
+    text-align: left;
 }
 
 
-table>th,
-td {
+table>td {
 
     padding: 5px 0;
-    text-align: center;
+    text-align: left;
 
 }
-
 
 
 
@@ -295,16 +294,16 @@ td {
     }
 
     .container a {
-     
+
         text-decoration: none;
-    
+
     }
 
     .container a:hover {
-    
+
         text-decoration: underline;
         color: blue;
-    
+
     }
 
 
@@ -314,11 +313,11 @@ td {
 
         display: flex;
         flex-direction: column;
-    
+
     }
 
     .side-bar {
-    
+
         width: 100%;
         background-color: rgba(0, 0, 0, 0.822);
         color: white;
@@ -329,7 +328,7 @@ td {
 
 
     .side-bar a {
-    
+
         color: white;
         text-decoration: none;
         padding: 15px;
@@ -342,7 +341,7 @@ td {
 
 
     #logout {
-    
+
         margin: auto;
         background-color: red;
         color: white;
@@ -352,41 +351,41 @@ td {
         text-decoration: none;
         width: 100px;
         text-align: center;
-    
+
     }
 
 
     .side-bar a:hover {
-    
+
         color: blue;
         text-decoration: underline;
         background-color: gray;
-    
+
     }
 
 
-    .side-bar h2 {       
-    
+    .side-bar h2 {
+
         text-align: center;
-    
+
     }
 
 
 
     .Right-section h3 {
-     
+
         width: 90%;
         background-color: white;
         padding: 10px;
         margin: 0 15px;
         margin-bottom: 25px;
         box-shadow: 0 0 5px gainsboro;
-    
+
     }
 
 
     .card-container {
-    
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,7 +401,7 @@ td {
         border-radius: 10px;
         text-align: center;
         box-shadow: 0 0 10px gainsboro;
-    
+
     }
 
 

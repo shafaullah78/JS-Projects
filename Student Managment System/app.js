@@ -11,8 +11,8 @@ var studentAge = document.querySelector("#studentAge")
 var studentMarks = document.querySelector("#studentMarks")
 var studentID = document.querySelector("#studentID")
 
-// ab ham add button ko get kr rahy hain 
 
+// ab ham add button ko get kr rahy hain 
 var addBtn = document.querySelector("#addBtn")
 
 addBtn.addEventListener("click", addRecord)
@@ -20,13 +20,32 @@ addBtn.addEventListener("click", addRecord)
 function addRecord() {
 
     if (
+
         studentAge.value === "" ||
         studentID.value === "" ||
         studentMarks.value === "" ||
         studentName.value === ""
+
     ) {
-        alert("Please fill all the fields")
+
+        Swal.fire({
+            title: "Please insert the field values",
+            showClass: {
+                popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    ` },
+            hideClass: {
+                popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    ` }
+        });
+
         return
+
     }
 
 
@@ -85,27 +104,10 @@ function searchData() {
     var id = studentID.value.trim()
     var found = false
 
-    for (var i = 0; i < students.length; i++) {
-
-        if (students[i].id.trim() === id) {
-
-            studentName.value = students[i].name
-            studentAge.value = students[i].age
-            studentID.value = students[i].id
-            studentMarks.value = students[i].marks
-
-            editIndex = i
-            found = true
-            break
-
-        }
-
-    }
-
-    if (!found) {
+    if (id === "") {
 
         Swal.fire({
-            title: "Please search a student by ID",
+            title: "Please insert the student ID",
             showClass: {
                 popup: `
       animate__animated
@@ -121,6 +123,48 @@ function searchData() {
         });
 
         return
+
+    }
+    else {
+
+        for (var i = 0; i < students.length; i++) {
+
+            if (students[i].id.trim() === id) {
+
+                studentName.value = students[i].name
+                studentAge.value = students[i].age
+                studentID.value = students[i].id
+                studentMarks.value = students[i].marks
+
+                editIndex = i
+                found = true
+                break
+
+            }
+
+        }
+
+        if (!found) {
+
+            Swal.fire({
+                title: "Not found",
+                showClass: {
+                    popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    ` },
+                hideClass: {
+                    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    ` }
+            });
+
+            return
+        }
+
     }
 
 
@@ -243,7 +287,7 @@ function deleteData() {
 
             swalWithBootstrapButtons.fire({
                 title: "Deleted!",
-                text: "Your file has been deleted.",
+                text: "Your record has been deleted.",
                 icon: "success"
             });
 
@@ -254,7 +298,7 @@ function deleteData() {
             /* Read more about handling dismissals below */
             swalWithBootstrapButtons.fire({
                 title: "Cancelled",
-                text: "Your imaginary file is safe :)",
+                text: "Your record is safe:)",
                 icon: "error"
             });
     });
@@ -304,9 +348,9 @@ function recoveryData() {
     renderStudents()
 
     // data recovery ka alert hai 
-    
+
     Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
         title: "Your work has been saved",
         showConfirmButton: false,

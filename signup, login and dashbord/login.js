@@ -1,27 +1,54 @@
 
-
-var loginBtn = document.getElementById("login")
+let loginBtn = document.querySelector("#login")
 
 loginBtn.addEventListener("click", function () {
 
-    var loginEmail = document.getElementById("l-email")
-    var loginPass = document.getElementById("l-pass")
+    let loginEmail = document.querySelector("#l-email")
+    let loginPass = document.querySelector("#l-pass")
 
-    var getEmail = localStorage.getItem("email")
-    var getPass = localStorage.getItem("password")
+    if (
+        loginEmail.value === "" ||
+        loginPass.value === ""
 
-    if (loginEmail.value === getEmail && loginPass.value === getPass) {
+    ) {
 
-       alert("Login successful")
+        alert("Please fill the input field")
+        return
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || []
+let found = false
+    for (let i = 0; i < users.length; i++) {
+
+        if (
+            users[i].email === loginEmail.value.trim() &&
+            users[i].password === loginPass.value.trim()
+        ){
+
+            found = true
+            break
+
+        }
+
+    }
+
+    if(found) {
 
         location.href = "./dashbord.html"
+        
+        loginEmail.value = ""
+        loginPass.value = ""
+        
+        alert("Login succeffull")
+        
+    }else {
 
+        alert("Something went to wrong")
+        
     }
-    
-    else {
 
-     alert("Something went to wrong")
 
-    }
 
 })
+
+
